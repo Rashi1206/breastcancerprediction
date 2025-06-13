@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<style>
+label {
+ width:300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align:center;
+  cursor:pointer;
+  }
+input[type=number] {
+  width: 300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align:center;
+ }
+
+ body {
+background-image:url(1.jpg);
+background-attachment:fixed;
+}
+
+button {
+  width:300px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align:center;
+  
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  width:350px;
+  border-radius: 10px;
+  background-color:#f2f2f2;
+  padding: 50px;
+  top: 0;
+  left: 5000px;
+ 
+}
+
+
+
+   
+ 
+
+#myfile {
+   opacity: 0;
+   position: absolute;
+   z-index: -1;
+}
+</style>
+<center>
+<body>
+
+<h1>Breast Cancer Prediction using Deep Learning</h1>
+
+
+<br>
+<br>
+
+<div>
+   
+      <form id="form" action = "http://localhost:5000/uploader" method = "POST" 
+         enctype = "multipart/form-data">
+
+
+        <label for="myfile">Upload the CSV File</label>
+<input type="file" name="file" id="myfile" required />
+<br> 
+         <button type = "submit"> CSV file Uploaded</button><br><br>
+         <button type="submit" formaction="http://localhost:5000/result">View Result</button>
+ <button type="submit" formaction="http://localhost:5000/plots">plots</button>
+      </form>
+	  <br>
+	  <form  id="form2" action = "http://localhost:5000/patient" method = "POST" 
+		 <label> Enter Patient ID to get Details</label><br>
+		 <input type="number" name="ID" required /><br>
+		 <button type="submit" formaction="http://localhost:5000/patient" >Get Details</button>
+
+         
+		 
+      </form>
+    </div>
+	
+
+   </body>
+
+<center>
+</body>
+</html>
