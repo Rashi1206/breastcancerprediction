@@ -70,6 +70,7 @@ jupyter notebook
 
 
 Open:
+python breast_cancer_model.py
 
 Breast_Cancer_ML.ipynb
 
