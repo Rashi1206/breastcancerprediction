@@ -1,29 +1,86 @@
-# BREAST CANCER PREDICTION USING MACHINE LEARNING AND DEEP LEARNING 
+🧠 Breast Cancer Prediction using Machine Learning
+📌 Project Overview
 
-GOAL OF THE PROJECT-
-To predict breast cancer for multiple patients simultaneously to save time so that necessary actions can be taken as earlier as possible. 
-The system predicts breast cancer with the accuracy of 99.3 percent. Along with prediction the system also displays the severity of cancer through Probability feature
+This project builds a machine learning model to predict whether a breast tumor is benign or malignant based on diagnostic features.
+The goal is to demonstrate an end-to-end ML workflow including data preprocessing, model training, evaluation, and prediction.
 
-Project Video- https://drive.google.com/file/d/1OonUlKNtSpdjpgIG7Z5C66KfceHjNi-q/view?usp=sharing
+This project is designed to showcase Python, machine learning fundamentals, and analytical thinking for technical interviews.
 
-DATASET USED- Wisconsin Breast Cancer Dataset.(Available in various repositories- KAGGLE , UCI repository etc.)
+📊 Dataset
 
-MACHINE LEARNING ALGORITHMS USED
-The highest accuracy obtained in case of machine learning algorithms were given by RANDOM FOREST and SVM i.e. 96.5 percent
-1. Support Vector Machine (SVM)
-2. K- Nearest Neighbor (KNN)
-3. Decision Tree
-4. Naive Bayes Classifier
-5. Random Forest
+Source: Breast Cancer Wisconsin Dataset (sklearn.datasets)
 
-DEEP LEARNING ALGORITHMS USED
-The highest accuracy was obtained by ANN i.e. 99.3 percent
-1. Artificial Neural Network (ANN)
-2. Convolutional Neural Network (CNN)
+Samples: 569
 
-USER INTERFACE-
-Created using FLASK which is a python web framework to interact with the system. The model ANN which gave the highest accuracy runs in background and gives the prediction.
+Features: 30 numerical features derived from digitized images of breast mass
 
-##NOTE- While creating project it is preferred to install all required libraries in your computer so that user interface can be created easily.
+Target:
+
+0 → Malignant
+
+1 → Benign
+
+⚙️ Machine Learning Pipeline
+
+Load dataset
+
+Exploratory Data Analysis (EDA)
+
+Data preprocessing & scaling
+
+Train–test split
+
+Model training
+
+Model evaluation
+
+Prediction
+
+🧪 Models Used
+
+Logistic Regression
+
+(Extendable to Random Forest, SVM, KNN)
+
+📈 Evaluation Metrics
+
+Accuracy
+
+Confusion Matrix
+
+Precision, Recall, F1-Score
+
+🛠️ Tech Stack
+
+Python
+
+NumPy
+
+Pandas
+
+Scikit-learn
+
+Matplotlib / Seaborn
+
+Jupyter Notebook
+
+▶️ How to Run
+pip install numpy pandas scikit-learn matplotlib seaborn
+jupyter notebook
 
 
+Open:
+
+Breast_Cancer_ML.ipynb
+
+🚀 Future Improvements
+
+Hyperparameter tuning
+
+Model comparison
+
+Feature importance analysis
+
+Convert model to REST API using FastAPI
+
+Add CI/CD pipeline
